@@ -3,10 +3,10 @@
 all: hello
 
 clean:
-	rm hello
+	rm hello_project
 hello: hello_project.cpp
 	g++ -o hello_project hello_project.cpp
 install:
-	sudo install ./hello /usr/local/bin
+	sudo install ./hello_project /usr/local/bin
 uninstall:
-	sudo rm -rf /usr/local/bin/hello
+	sudo rm -rf /usr/local/bin/hello_project
